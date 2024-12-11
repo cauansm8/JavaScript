@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.orgs_3 {
+    color: white;
+    margin: 20px auto;
+    background-color: #1A1A1A;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.infos_gerais, .infos_endereco, .infos_pags {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.mensagem, .fim_de_compra {
+    font-size: 17px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.label {
+    text-align: center;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h4 {
+    font-size: 18px;
+    color: #66bb6a;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(37, 37, 37, 0.5);
+}
+
+.botao {
+    border: solid #4CAF50 2px;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #4CAF50;
+    text-decoration: none;
+    width: 60%;
+    max-width: 300px;
+    height: 60px;
+    font-size: 20px;
+    margin: 10px auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #323232;
+}
+
+.valor {
+    text-align: center;
+    color: white;
+    background-color: #020202a1;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    margin: 10px auto;
+}
+
+.valor:hover {
+    background-color: #212321;
+}
+
+.barra {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.imagem_pix {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}

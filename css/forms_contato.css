@@ -1,0 +1,236 @@
+body {
+    height: 100%;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.contato_org {
+    color: white;
+    margin: 20px auto;
+    background-color: #1A1A1A;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.dados {
+    color: white;
+    margin: 20px auto;
+    background-color: #1A1A1A;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.problema {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.textarea {
+    border: solid #4CAF50 2px;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #4CAF50;
+    text-decoration: none;
+    height: 200px;
+    width: 90%;
+    max-width: 800px;
+    resize: none;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.redes
+{
+    margin: 20px auto;
+    background-color: #141414;
+    text-align: center;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.redes1 {
+    background-color: #141414;
+    text-align: center;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.imagem1, .imagem2, .imagem3, .imagem4
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imagem_contato {
+    height: 40px;
+    width: 40px;
+    margin: 3px;
+}
+
+.label {
+    text-align: center;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 18px;
+    color: #66bb6a;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(37, 37, 37, 0.5);
+}
+
+.barra {
+    border: solid #4CAF50 2px;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #4CAF50;
+    text-decoration: none;
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.barra:hover {
+    background-color: #323232;
+}
+
+.botao {
+    border: solid #4CAF50 2px;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #4CAF50;
+    text-decoration: none;
+    width: 48%;
+    max-width: 300px;
+    height: 40px;
+    margin: 10px auto;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.botao:hover {
+    background-color: #323232;
+}
+
+.botao:focus {
+    outline: none;
+}
+
+.botao2 {
+    background-color: #76b900;
+    color: white;
+    width: 90%;
+    max-width: 300px;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 11px;
+    text-align: center;
+    margin: 10px auto;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.botao2:hover {
+    background-color: #96df17;
+}
+
+.botao2 svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.caixa-alerta {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 88%;
+    background-color: #76b900;
+    color: black;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+}
+
+.caixa-alerta:hover {
+    background-color: #a9ef2f;
+}
+
+.alinhando-alerta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contato_org, .dados {
+        width: 95%;
+    }
+
+    .textarea, .barra, .botao, .botao2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h4 {
+        font-size: 16px;
+    }
+
+    .textarea, .barra, .botao, .botao2 {
+        width: 100%;
+    }
+
+    .botao, .botao2 {
+        font-size: 14px;
+    }
+}

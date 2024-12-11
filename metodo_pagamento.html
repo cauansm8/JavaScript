@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+<link rel="stylesheet" href="css/metodo_pagamento.css">
+<title>Métodos de pagamento</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="https://seeklogo.com/images/N/nvidia-logo-2B71F1828F-seeklogo.com.png">
+<meta charset="utf-8">
+
+</head>
+
+<body>
+    <br>
+    <nav class="nav_bar">
+
+        <button type="submit" value="Retornar" name="forms" class="botao2" id="pags" > <a href="infos_pessoais.html">Retornar</a></button>
+        <button type="submit" value="Continuar" name="forms" class="botao" id="pags" > <a href="resumo_compra.html" onclick="passar_dados2();" >Finalizar compra</a></button>
+ 
+    </nav>
+
+
+    <div class="orgs_2" id="orgs_2"> <!-- ID PARA JS NO BOTÃO DE CONTINUAR -->
+
+        <div class="opc_pag">
+    
+        <h4>Método de pagamento</h4> 
+    
+        <select id="metodo_pagamento" class="botao_select" onchange="metodo_pagamento();"> 
+            <option value="Cartão">Cartão</option>
+            <option value="Pix">Pix</option>
+            <option value="Boleto">Boleto</option>
+        </select> <br><br>
+    
+    
+        <h4>Quantidade do produto (RTX 4090)</h4>                     
+        <input type="number" min="1" max="5" name="quantidade" required class="barra" id="quantidade" oninput="valor()"> <br><br>
+    
+        <h4>Valor do produto</h4>
+       
+        <input type="text" class="valor" value="12000" readonly size="9" id="valor">
+   
+
+
+        </div>
+    
+        <div class="cartao" id="cartao">              
+    
+                <br>
+        <label for="numero_cartao" class="label">Número do cartão</label>                           
+        <input type="text" name="numero_cartao" required class="barra" > <br><br><br>
+    
+    
+        <label for="nome_cartao" class="label">Nome do titular</label>                                
+        <input type="text" name="nome_cartao" required class="barra" > <br><br><br>
+    
+    
+        <label for="cpf_cnpj" class="label">CPF/CNPJ do titular</label>                           
+        <input type="text" name="cpf_cnpj" required class="barra" > <br><br><br>
+        
+        
+        <label for="cvv" class="label">Código de segurança</label>                                
+        <input type="text" name="cvv" required class="barra"  maxlength="3" minlength="3"> <br><br><br>
+    
+        <label for="validade" class="label">Data de validade</label>                          
+        <input type="month" name="validade" required class="barra" min="2025-01" max="2035-12"> <br><br>
+    
+        <br>
+                                        
+    
+        </div>
+    
+    
+        <div class="pix" id="pix" style="display:none;">           
+    
+            <br>
+                <label for="cdg" class="label">Código do pix</label>  <br>                     
+                <input type="text" id="input_copy" class="barra" value="00020126400014br.gov.bcb.pix0111518949858180203Pix52040000530398654041.005802BR5921CAUAN SIMOES DA SILVA6009ARACATUBA62290525MBpheC8jhD56pKvGdhGknjKmk6304C260" readonly>  <br><br>
+                <button id="copiarJs" class="botao_select" style="cursor: pointer;">Clique para copiar o código do pix</button> <br><br>
+            
+                <label for="cdg" class="label">Ou escaneie o QRCode</label> <br>
+                <img src="imagens/pix.png.jpg" alt="código do pix" class="imagem_pix"> <br>
+    
+                <p>Você tem 30 minutos para realizar o pagamento por pix ou o pedido será cancelado.</p> 
+            
+        </div>
+        
+    
+        <div class="boleto" id="boleto" style="display:none;">           
+    
+    
+            <br>
+        <label for="boleto" class="label">Gerar boleto</label>  <br>
+        <button type="button" value="boleto" class="botao_select" style="cursor: pointer;"><a href="imagens/boleto.png" target="_blank" class="link_boleto">Boleto</a></button> 
+        
+        <br><br>
+        <p>Imprima o boleto e faça o pagamento até a data marcada em uma loja ou no seu banco.</p>
+        
+        </div>
+    
+    </div>
+
+    
+
+    <script language="JavaScript" src="scripts/script2.js">       </script>
+</body>
+
+</html>

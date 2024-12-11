@@ -1,0 +1,159 @@
+body {
+    background-color: black;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.orgs_2 {
+    color: white;
+    margin: 20px auto;
+    background-color: #1A1A1A;
+    width: 90%; 
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.opc_pag, .cartao, .pix, .boleto {
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 300px; 
+    max-width: 400px; 
+}
+
+.imagem_pix {
+    width: 100%;
+    max-width: 200px; 
+    height: auto; 
+}
+
+h4 {
+    font-size: 18px;
+    color: #66bb6a;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(37, 37, 37, 0.5);
+}
+
+.label {
+    font-size: 17px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.barra {
+    width: 90%; 
+    max-width: 300px; 
+    padding: 10px;
+    border: solid #4CAF50 2px;
+    background-color: #212121;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #4CAF50;
+}
+
+.barra:focus {
+    outline: none;
+}
+
+
+.botao, .botao2, .botao_select {
+    background-color: #76b900;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 11px;
+    text-align: center;
+    transition: all 0.6s ease;
+    width: 45%; 
+    max-width: 300px; 
+    margin: 10px auto;
+    height: 4.0em;
+}
+
+.botao:hover {
+    background-color: #96df17;
+}
+
+.botao2 {
+    background-color: #ad5656;
+}
+
+.botao2:hover {
+    background-color: #ba6969;
+}
+
+.valor {
+    border: solid #4CAF50 2px;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #4CAF50;
+    text-decoration: none;
+    width: 90%; 
+    max-width: 300px; 
+    height: auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.valor:focus {
+    outline: none;
+}
+
+.nav_bar {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%; 
+    max-width: 1200px;
+    background-color: #1A1A1A;
+    padding: 10px;
+    gap: 10px; 
+    box-sizing: border-box;
+}
+
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media (max-width: 768px) {
+    .orgs_2 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .opc_pag, .cartao, .pix, .boleto {
+        flex: 1 1 100%; 
+        margin: 10px 0;
+    }
+
+    .nav_bar {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .botao, .botao2 {
+        width: 100%; 
+    }
+}

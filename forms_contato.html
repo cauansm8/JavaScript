@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="css/forms_contato.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="https://seeklogo.com/images/N/nvidia-logo-2B71F1828F-seeklogo.com.png">
+<title>Contatos</title>
+
+</head>
+
+<body>
+    <br>
+    <div class="dados">
+
+        <button type="submit" name="forms" class="botao2" id="pags" > <a href="index.html">Retornar ao site</a></button>
+        <br>
+  
+      </div>
+
+    <div class="contato_org">
+        
+        <div class="problema">      <!-- SELECT -->
+            
+            <h4>Suporte</h4>
+            <form>
+            <label for="suporte" class="label">Informe a medida desejada</label>
+            <select class="botao">
+
+                <option>Recuperar conta</option>
+                <option>Solicitar dados da conta</option>
+                <option>Problemas com compra</option>
+                <option>Exclusão de conta</option>
+                <option>Reembolso de compra</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="mensagem" class="label">Informe o ocorrido</label> <br>
+            
+            <textarea name="comentario" required class="textarea"></textarea><br><br>
+            <label for="conteudo" class="label">Envie uma foto ou vídeo sobre o problema apresentado</label> <br> 
+            <input type="file" class="barra" name="conteudo" required multiple> <br> <br>
+
+            <button type="reset" name="help" value="Enviar" class="botao" onclick="enviar();">Enviar</button>
+        </form>
+        </div>
+
+        
+        
+
+    </div>
+
+   
+    
+</div>
+
+
+<div class="caixa-alerta" id="caixa-alerta" onclick="fechar();">
+
+    <div class="alinhando-alerta">
+        <p>Mensagem enviada! <br>Fique atento ao email quanto ao feedback dos nossos atendentes <br><br>Clique aqui para fechar a mensagem</p>
+
+    </div>
+</div>
+
+
+<div class="redes">
+<h4>Outros meios de atendimento</h4>
+
+<div class="redes1">           
+
+            <div class="imagem1">
+            <a href="https://www.instagram.com/" target="_blank">                  
+            <img src="imagens/instagram.png" alt="instagram" class="imagem_contato"> 
+            </a> 
+            </div>
+
+
+            <div class="imagem2">
+            <a href="https://twitter.com/home" target="_blank">                    
+            <img src="imagens/twitter.png" alt="twitter" class="imagem_contato"> 
+            </a> 
+            </div>
+
+            <div class="imagem3">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">      
+            <img src="imagens/gmail.png" alt="gmail" class="imagem_contato">
+            </a> 
+            </div>
+
+            <div class="imagem4">
+
+            <a href="https://outlook.live.com/mail/about/index_pt.html" target="_blank">  
+            <img src="imagens/outlook.png" alt="outlook" class="imagem_contato">
+            </a> 
+            </div>
+    </div> 
+</div>
+
+<script language="JavaScript" src="scripts/script2.js">       </script>
+</body>
+
+</html>

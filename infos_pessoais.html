@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="css/infos_pessoais.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="https://seeklogo.com/images/N/nvidia-logo-2B71F1828F-seeklogo.com.png">
+<title>Informações pessoais</title>
+</head>
+
+<body>
+
+    <br>
+
+<nav class="nav_bar">
+
+      <button type="submit" value="Retornar" name="forms" class="botao2" id="pags" > <a href="index.html">Retornar</a></button>
+      <button type="submit" value="Continuar" name="forms" class="botao" id="pags" > <a href="metodo_pagamento.html" onclick="passar_dados1()">Continuar</a></button>
+</nav>
+   
+    
+    
+<div id="infos"> 
+
+    <div class="orgs">
+        
+        <div class="infos">
+
+        <h4>Dados</h4>
+        
+        <form>
+        <label for="nome" class="label">Nome</label>                    
+        <input type="text" name="forms" required class="barra"  id="nome">     <br> <br>
+
+        <label for="email" class="label">Email</label>                     
+        <input type="email" name="forms" required class="barra" id="email"> <br> <br>
+
+        <label for="cpf_cnpj" class="label">CPF</label>        
+        <input type="text" name="forms" required class="barra" id="cpf"> <br><br>
+
+        <label for="telefone" class="label">Telefone</label>                
+        <input type="tel" name="forms" required class="barra"  id="telefone"> <br><br>
+        
+
+        <br>
+        
+
+        
+
+    </div>
+
+    <div class="enderecos">
+        
+        <h4>Endereço</h4>
+
+         <label for="cidade" class="label">Cidade</label>                       
+         <input type="text" name="forms" required class="barra"  id="cidade"> <br><br>
+
+         
+         <label for="rua" class="label">Rua</label>                                  
+         <input type="text" name="forms" required class="barra"  id="rua"> <br><br>
+
+
+         <label for="bairro" class="label">Bairro</label>                              
+         <input type="text" name="forms" required class="barra" id="bairro"> <br><br>
+
+
+         <label for="numero" class="label">Número</label>                            
+         <input type="text" name="forms" required class="barra" id="numero"> <br><br>
+    
+         <label for="cep" class="label">CEP</label>                             
+         <input type="text" name="forms" required class="barra" id="cep"> <br><br>
+
+        </form>
+    
+        
+    </div>
+
+
+     <div class="map-container">                                     
+            
+    <iframe class="iframe_mapa"
+
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235607.75761891336!2d-51.4732045!3d-22.1221149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94937cded94af7d7%3A0xb9445747decd05cc!2sPresidente%20Prudente%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1697308718453!5m2!1spt-BR!2sbr">
+    
+    </iframe>
+
+    </div>
+</div>
+
+<script language="JavaScript" src="scripts/script2.js">       </script>
+
+</body>
+
+</html>
